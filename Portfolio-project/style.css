@@ -23,7 +23,8 @@ section {
     background: white;
     margin: 20px auto;
     padding: 20px;
-    width: 60%;
+    width: 90%;
+    max-width: 600px;
     border-radius: 8px;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
@@ -51,6 +52,10 @@ button {
 
 .dark .project-card {
     background-color: #1e1e1e;
+}
+
+.dark .github-card {
+    background: #1e1e1e;
 }
 
 .navbar {
@@ -85,6 +90,16 @@ button {
     color: #fff;
 }
 
+.gituhb-card {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    Max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 #skills ul {
     list-style: none;
     padding: 0;
@@ -92,4 +107,28 @@ button {
 
 #skills li {
     margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color:#393e46;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: column;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
 }
